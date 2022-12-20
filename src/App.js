@@ -1,5 +1,22 @@
+import {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+
+const Counter = () => {
+  const [counter, setCounter ] = useState(0);
+
+  const increment = () => setCounter((prev) => prev + 1);
+  const decrement = () => setCounter((prev) => prev - 1);
+
+  return (
+    <div>
+      <p>{`Counter: ${counter}`}</p>
+      <button className="btn" onClick={increment}>increment</button>
+      <button className="btn" onClick={decrement}>decrement</button>
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -7,16 +24,16 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Testing CI/CD process on Github.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+        <a className="App-link"
+          href="https://github.com/eliyahukoren/react-cicd"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          >
+          github repo
+          </a>
+        <Counter />
       </header>
     </div>
   );
