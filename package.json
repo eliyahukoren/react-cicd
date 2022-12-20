@@ -23,7 +23,7 @@
     "lint": "node ./scripts/eslint.js",
     "type:check": "node ./scripts/typecheck.js",
     "i18n:check": "node ./scripts/i18n-check.js",
-    "ci": "yarn add --frozen-lockfile"
+    "ci": "yarn install --frozen-lockfile"
   },
   "eslintConfig": {
     "extends": [
