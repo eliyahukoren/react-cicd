@@ -32,10 +32,7 @@ jobs:
       - name: build, install, test  
         run: | 
           yarn ci
-          yarn build
-          yarn start:nowatch
           yarn e2e 
-          yarn eject
       # - name: run e2e  
         # run: yarn e2e
       - name: lint code
