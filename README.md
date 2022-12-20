@@ -1,5 +1,9 @@
 # Deployed to [Netlify](https://frolicking-taffy-1c00bc.netlify.app)
 
+![workflow](https://github.com/eliyahukoren/react-cicd/actions/workflows/github-actions.yml/badge.svg?event=push)
+
+![workflow main](https://github.com/eliyahukoren/react-cicd/actions/workflows/github-actions.yml/badge.svg?branch=main)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
