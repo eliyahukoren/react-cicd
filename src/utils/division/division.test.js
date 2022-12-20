@@ -9,6 +9,10 @@ describe('testing division function', () => {
     expect(division(-20, -2)).toBe(10);
   });
 
+  test('negative numbers: should divide numbers', () => {
+    expect(division(-22, -11)).toBe(2);
+  });
+
   test('positive & negative numbers: should divide numbers', () => {
     expect(division(18, -3)).toBe(-6);
   });
