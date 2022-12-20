@@ -29,8 +29,11 @@ jobs:
         run: yarn test:e2e
       - name: start puppeteer e2e
         run: yarn global add serve
-      # - name: start app  
-        # run: yarn start
+      - name: build, install, test  
+        run: | 
+          yarn ci
+          yarn build
+          yarn e2e 
       # - name: run e2e  
         # run: yarn e2e
       - name: lint code
