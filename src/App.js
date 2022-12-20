@@ -20,13 +20,13 @@ const Counter = () => {
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app">
+      <header className="app-header">
+        <img src={logo} className="app-logo" alt="logo" />
         <p>
           Testing CI/CD process on Github.
         </p>
-        <a className="App-link"
+        <a className="app-link"
           href="https://github.com/eliyahukoren/react-cicd"
           target="_blank"
           rel="noopener noreferrer"
