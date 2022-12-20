@@ -1,6 +1,10 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
   init:
     runs-on: ubuntu-latest
@@ -15,3 +19,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install modules
         run: yarn install
+      - name: Build project
+        run: yarn build
+      - name: Build story
+        run: yarn build:story
+      - name: Unit test
+        run: yarn test:unit
+      - name: e2e test
+        run: yarn test:e2e
+      - name: lint code
+        run: yarn lint
