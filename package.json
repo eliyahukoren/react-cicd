@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "puppeteer": "18.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -14,13 +15,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test:unit": "react-scripts test",
+    "test:unit": "react-scripts test --testPathIgnorePatterns=.*e2e.test.js",
+    "e2e": "react-scripts test --testPathPattern=.*e2e.test.js$",
     "eject": "react-scripts eject",
     "build:story": "node ./scripts/counterstory.js",
     "test:e2e": "node ./scripts/e2e.test.js",
-    "lint" : "node ./scripts/eslint.js",
-    "type:check" : "node ./scripts/typecheck.js",
-    "i18n:check" : "node ./scripts/i18n-check.js"
+    "lint": "node ./scripts/eslint.js",
+    "type:check": "node ./scripts/typecheck.js",
+    "i18n:check": "node ./scripts/i18n-check.js"
   },
   "eslintConfig": {
     "extends": [
