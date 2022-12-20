@@ -33,7 +33,7 @@ jobs:
         run: | 
           yarn ci
           yarn build
-          yarn start
+          yarn start:nowatch
           yarn e2e 
           yarn eject
       # - name: run e2e  

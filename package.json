@@ -14,6 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:nowatch": "CI=true react-scripts start --watchAll=false",
     "build": "react-scripts build",
     "test:unit": "react-scripts test --testPathIgnorePatterns=.*e2e.test.js",
     "e2e": "react-scripts test --testPathPattern=.*e2e.test.js$",
